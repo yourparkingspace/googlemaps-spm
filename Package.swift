@@ -5,14 +5,41 @@ import PackageDescription
 
 let package = Package(
     name: "googlemaps-spm",
-    platforms: [
-        .iOS(.v15)
-    ],
     products: [
-        .library(
-            name: "googlemaps-spm",
-            targets: ["GoogleMaps", "GoogleMapsBase", "GoogleMapsCore", "GoogleMapsM4B", "GooglePlaces"]),
-    ],
+            .library(
+                name: "GoogleMapsBase",
+                targets: [
+                    "GoogleMapsBase"
+                ]
+            ),
+            .library(
+                name: "GoogleMapsCore",
+                targets: [
+                    "GoogleMapsCore"
+                ]
+            ),
+            .library(
+                name: "GoogleMaps",
+                targets: [
+                    "GoogleMaps",
+                    "GoogleMapsBase",
+                    "GoogleMapsCore"
+                ]
+            ),
+            .library(
+                name: "GoogleMapsM4B",
+                targets: [
+                    "GoogleMapsM4B"
+                ]
+            ),
+            .library(
+                name: "GooglePlaces",
+                targets: [
+                    "GooglePlaces",
+                    "GoogleMapsBase"
+                ]
+            )
+        ],
     targets: [
         .binaryTarget(
                     name: "GoogleMaps",
