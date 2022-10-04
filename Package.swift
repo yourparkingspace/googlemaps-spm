@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "googlemaps-spm",
-            targets: ["googlemaps-spm"]),
+            targets: ["GoogleMaps", "GoogleMapsBase", "GoogleMapsCore", "GoogleMapsM4B", "GooglePlaces"]),
     ],
     targets: [
         .binaryTarget(
@@ -29,6 +29,10 @@ let package = Package(
         .binaryTarget(
                     name: "GoogleMapsM4B",
                     path: "GoogleMapsM4B.xcframework"
+                ),
+        .binaryTarget(
+                    name: "GooglePlaces",
+                    path: "GooglePlaces.xcframework"
                 )
     ]
 )
