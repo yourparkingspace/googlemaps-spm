@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "googlemaps-spm",
+    name: "GoogleMaps",
     products: [
             .library(
                 name: "GoogleMapsBase",
