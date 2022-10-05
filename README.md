@@ -1,15 +1,15 @@
 # Google Maps Swift Package
 
 ## Requirements
-* [iOS 12.0](https://wikipedia.org/wiki/IOS_12) or later.
-* [Xcode 12.0](https://developer.apple.com/xcode) or later.
+* [iOS 15.0](https://wikipedia.org/wiki/IOS_12) or later.
+* [Xcode 14.0](https://developer.apple.com/xcode) or later.
 
 ## Installation
 - Add the following dependency to your project's `Package.swift`.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/YAtechnologies/GoogleMaps-SP.git", .upToNextMinor(from: "6.0.0"))
+    .package(url: "https://github.com/yourparkingspace/googlemaps-spm.git", .upToNextMajor(from: "7.1.0"))
 ]
 ```
 
