@@ -9,7 +9,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourparkingspace/googlemaps-spm.git", .upToNextMajor(from: "7.1.0"))
+    .package(url: "https://github.com/yourparkingspace/googlemaps-spm.git", .branch("main"))
 ]
 ```
 
