@@ -1,7 +1,7 @@
-
-GoogleMaps.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-GoogleMaps.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-GoogleMaps.xcodeproj/xcuserdata/davidsmailes.xcuserdatad/xcschemes/xcschememanagement.plist
-.swiftpm/xcode/xcuserdata/davidsmailes.xcuserdatad/xcschemes/xcschememanagement.plist
+.DS_Store
+/.build
+xcuserdata/
+.swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-GoogleMaps.xcodeproj/project.pbxproj
+.netrc
+Build/
