@@ -44,27 +44,27 @@ let package = Package(
         .binaryTarget(
                     name: "GoogleMaps",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMaps.xcframework.zip",
-                    checksum: "b6bbad8d62bdebdac4ac519462dde6ab068a53ac847951b8f9c63dd349a19ace"
+                    checksum: "d4fbc09e7401c2417cd24cd0579e4980eb537e74bac50e04cce747ccbda5fa63"
                 ),
         .binaryTarget(
                     name: "GoogleMapsBase",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsBase.xcframework.zip",
-                    checksum: "a95ee5489916c5053d54b5b7f1cc85f78dc4297b6ff3660b405f21fe43d041e0"
+                    checksum: "bf0e46dc8bc4491b980d49a4572839b3a1223d92b67e570d94ee7399a60109b5"
                 ),
         .binaryTarget(
                     name: "GoogleMapsCore",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsCore.xcframework.zip",
-                    checksum: "a1081239d7692a159295510553194c8aa97bfd49ed73a4e3ba6e95099b9e629a"
+                    checksum: "9d061830998e34829fd661408bd949b299e869baa93c336d2d5c589089089c70"
                 ),
         .binaryTarget(
                     name: "GoogleMapsM4B",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsM4B.xcframework.zip",
-                    checksum: "d261f63023586486ff7dffbe02a67e3985f92c4b7647b629566c948134f3164a"
+                    checksum: "1db708a4ad060056b0ba31874f753ce36ca504bb46fbc5e1bdc5ab1f7e92db73"
                 ),
         .binaryTarget(
                     name: "GooglePlaces",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GooglePlaces.xcframework.zip",
-                    checksum: "0d6eb6ba6da31203b9d5a0e57fb28b6b4321d3bde2db0014b830121fb0af065b"
+                    checksum: "1ee54aeaf2bc6cbef43b898e085b0a18adc4a959bf558a57d1590befeb877af3"
                 )
     ]
 )
