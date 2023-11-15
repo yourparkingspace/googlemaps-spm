@@ -6,34 +6,15 @@ import PackageDescription
 let package = Package(
     name: "GoogleMaps",
     products: [
-            .library(
-                name: "GoogleMapsBase",
-                targets: [
-                    "GoogleMapsBase"
-                ]
-            ),
-            .library(
-                name: "GoogleMapsCore",
-                targets: [
-                    "GoogleMapsCore"
-                ]
-            ),
-            .library(
-                name: "GoogleMaps",
-                targets: [
-                    "GoogleMaps",
-                    "GoogleMapsBase",
-                    "GoogleMapsCore"
-                ]
-            ),
-            .library(
-                name: "GoogleMapsM4B",
-                targets: [
-                    "GoogleMapsM4B"
-                ]
-            )
-        ],
+        .library(
+            name: "GoogleMaps",
+            targets: ["GoogleMaps"]),
+    ],
     targets: [
+        .target(
+            name: "GoogleMaps",
+            dependencies: []
+        ),
         .binaryTarget(
                     name: "GoogleMaps",
                     url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMaps.xcframework.zip",
