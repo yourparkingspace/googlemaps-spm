@@ -8,11 +8,11 @@ let package = Package(
     products: [
         .library(
             name: "GoogleMaps",
-            targets: ["GoogleMaps"]),
+            targets: ["YPSGoogleMaps"]),
     ],
     targets: [
         .target(
-            name: "GoogleMaps",
+            name: "YPSGoogleMaps",
             dependencies: []
         ),
         .binaryTarget(
