@@ -12,7 +12,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "GoogleMaps",
+            name: "YPSGoogleMaps",
             dependencies: []
         ),
         .binaryTarget(
