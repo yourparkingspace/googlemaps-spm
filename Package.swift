@@ -1,39 +1,46 @@
-// swift-tools-version: 5.7
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
     name: "GoogleMaps",
+    defaultLocalization: "en",
     products: [
         .library(
+            name: "GoogleMapsBase",
+            targets: [
+                "GoogleMapsBase"
+            ]
+        ),
+        .library(
+            name: "GoogleMapsCore",
+            targets: [
+                "GoogleMapsCore"
+            ]
+        ),
+        .library(
             name: "GoogleMaps",
-            targets: ["YPSGoogleMaps"]),
+            targets: [
+                "GoogleMaps",
+                "GoogleMapsBase",
+                "GoogleMapsCore"
+            ]
+        )
     ],
     targets: [
-        .target(
-            name: "YPSGoogleMaps",
-            dependencies: []
+        .binaryTarget(
+            name: "GoogleMaps",
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMaps.xcframework.zip",
+            checksum: "36f180556405a1ac6a934dd779fdfd280e19a73121eba45b32e4ee9f1e6370f2"
         ),
         .binaryTarget(
-                    name: "GoogleMaps",
-                    url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMaps.xcframework.zip",
-                    checksum: "335ad946933af02a21b3341c0b877835779e19ca44b27743b469b25e28d714ac"
-                ),
+            name: "GoogleMapsBase",
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMapsBase.xcframework.zip",
+            checksum: "5e0a2259f86e4d83e6ffa307dcab3593bccaf8dbc090cf1fac78ee593a892ef2"
+        ),
         .binaryTarget(
-                    name: "GoogleMapsBase",
-                    url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsBase.xcframework.zip",
-                    checksum: "371ed089b59810ed6cf0b25fc0b9002336515958144cb365a211dc5caf6c875f"
-                ),
-        .binaryTarget(
-                    name: "GoogleMapsCore",
-                    url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsCore.xcframework.zip",
-                    checksum: "b86f9cb29590cd7c66fd2bb92388c8803a862049056f730e78c5161af93afc33"
-                ),
-        .binaryTarget(
-                    name: "GoogleMapsM4B",
-                    url: "https://github.com/yourparkingspace/googlemaps-spm/releases/download/8.1.0/GoogleMapsM4B.xcframework.zip",
-                    checksum: "0bbced9e4eb93f40fa118c524431715a7163d9c21af725ab4ca4e694b775d8a8"
-                )
+            name: "GoogleMapsCore",
+            url: "https://github.com/gomore/GoogleMaps-SPM/releases/download/8.3.1/GoogleMapsCore.xcframework.zip",
+            checksum: "3055ba0738bc1e596c1e3f33c37974cfbfa95c3877021b4f06126cd299990065"
+        )
     ]
 )
